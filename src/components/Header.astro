@@ -1,10 +1,8 @@
 ---
-import { SITE_TITLE } from '../consts';
 import HeaderLink from './HeaderLink.astro';
 ---
 
 <header>
-	<a href="/" class="site-title">{SITE_TITLE}</a>
 	<nav>
 		<HeaderLink href="/">home</HeaderLink>
 		<HeaderLink href="/logs">logs</HeaderLink>
@@ -16,23 +14,17 @@ import HeaderLink from './HeaderLink.astro';
 <style>
 	header {
 		display: flex;
-		flex-wrap: wrap;
-		align-items: baseline;
-		justify-content: space-between;
-		gap: 0.5rem 1.5rem;
+		/* No site title on the left any more — keep the nav where it has always
+		   been, hard against the right edge. */
+		justify-content: flex-end;
 		margin-bottom: 2.5rem;
-	}
-
-	.site-title {
-		font-size: 1.35rem;
-		font-weight: 600;
-		color: var(--text);
-		text-decoration: none;
 	}
 
 	nav {
 		display: flex;
-		gap: 1rem;
+		flex-wrap: wrap;
+		justify-content: flex-end;
+		gap: 0.5rem 1rem;
 		font-size: 1rem;
 	}
 
