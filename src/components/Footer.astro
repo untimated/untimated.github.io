@@ -1,0 +1,39 @@
+---
+import { AUTHOR_NAME, GITHUB_URL, ITCH_URL, LINKED_IN } from '../consts';
+
+const today = new Date();
+---
+
+<footer>
+	<hr />
+	<p>
+		&copy; {today.getFullYear()} {AUTHOR_NAME} &middot;{' '}
+		<a href={GITHUB_URL}>github</a> &middot;{' '}
+		<a href={ITCH_URL}>itch.io</a> &middot;{' '}
+		<a href={LINKED_IN}>linkedin</a> &middot;{' '}
+		<a href="/rss.xml">rss</a>
+	</p>
+</footer>
+
+<style>
+    hr {
+        border-color: #1d1f1e;
+    }
+	footer {
+		margin-top: 4rem;
+		font-size: 0.95rem;
+		color: var(--text-muted);
+	}
+
+	footer p {
+		margin: 0;
+	}
+
+	footer a {
+		color: var(--text-muted);
+	}
+
+	footer a:hover {
+		color: var(--text);
+	}
+</style>

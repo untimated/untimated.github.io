@@ -1,0 +1,282 @@
+/*
+  Bear Blog-flavoured minimal CSS, set in a classical serif.
+  Original inspiration, MIT licensed:
+  https://github.com/HermanMartinus/bearblog/blob/master/templates/styles/blog/default.css
+ */
+
+:root {
+	--width: 44rem;
+	--font-body: var(--font-serif);
+
+	--bg: #fffdf9;
+	--text: #1a1a1a;
+	--text-muted: #6b6b6b;
+	--link: #1a5490;
+	--link-visited: #6a3d9a;
+	--rule: #e2ddd4;
+	--code-bg: #f2eee7;
+	--mark: #fff3b8;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--bg: #0f0f0f;
+		--text: #e8e4dc;
+		--text-muted: #9a958c;
+		--link: #8ab4f8;
+		--link-visited: #c9a6e8;
+		--rule: #2e2e34;
+		--code-bg: #22222a;
+		--mark: #4a4322;
+	}
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html {
+	-webkit-text-size-adjust: 100%;
+}
+
+body {
+	font-family: var(--font-body);
+	font-size: 1.25rem;
+	line-height: 1.6;
+	color: var(--text);
+	background: var(--bg);
+	max-width: var(--width);
+	margin: 0 auto;
+	padding: 3rem 1.25rem 5rem;
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+	font-kerning: normal;
+	font-variant-numeric: oldstyle-num;
+	text-rendering: optimizeLegibility;
+}
+
+/* ---- Headings ---------------------------------------------------------- */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 2rem 0 0.6rem;
+	line-height: 1.25;
+	font-weight: 600;
+	color: var(--text);
+	text-wrap: balance;
+}
+
+h1 {
+	font-size: 2.1rem;
+	margin-top: 0;
+}
+h2 {
+	font-size: 1.6rem;
+}
+h3 {
+	font-size: 1.3rem;
+}
+h4,
+h5,
+h6 {
+	font-size: 1.1rem;
+}
+
+/* ---- Text -------------------------------------------------------------- */
+
+p,
+ul,
+ol,
+blockquote,
+pre,
+table,
+figure {
+	margin: 0 0 1.2rem;
+}
+
+a {
+	color: var(--link);
+	text-decoration-thickness: 1px;
+	text-underline-offset: 0.15em;
+}
+a:visited {
+	color: var(--link-visited);
+}
+a:hover {
+	text-decoration: none;
+}
+
+strong,
+b {
+	font-weight: 700;
+}
+
+small {
+	font-size: 0.85rem;
+	color: var(--text-muted);
+}
+
+mark {
+	background: var(--mark);
+	color: var(--text);
+}
+
+blockquote {
+	border-left: 2px solid var(--rule);
+	padding-left: 1.2rem;
+	margin-left: 0;
+	color: var(--text-muted);
+	font-style: italic;
+}
+
+hr {
+	border: none;
+	border-top: 1px solid var(--rule);
+	margin: 2.5rem 0;
+}
+
+ul,
+ol {
+	padding-left: 1.4rem;
+}
+
+li {
+	margin-bottom: 0.3rem;
+}
+
+/* ---- Code -------------------------------------------------------------- */
+
+code,
+kbd,
+samp {
+	font-family: ui-monospace, 'SFMono-Regular', 'Cascadia Mono', Menlo, Consolas, monospace;
+	font-size: 0.85em;
+	font-variant-numeric: normal;
+}
+
+:not(pre) > code {
+	background: var(--code-bg);
+	padding: 0.15em 0.35em;
+	border-radius: 3px;
+}
+
+pre {
+	padding: 1rem 1.1rem;
+	border-radius: 4px;
+	overflow-x: auto;
+	font-size: 0.95rem;
+	line-height: 1.5;
+}
+
+pre > code {
+	all: unset;
+	font-family: inherit;
+}
+
+/* Shiki emits both themes; swap them with the reader's colour scheme. */
+@media (prefers-color-scheme: dark) {
+	.astro-code,
+	.astro-code span {
+		color: var(--shiki-dark) !important;
+		background-color: var(--shiki-dark-bg) !important;
+		font-style: var(--shiki-dark-font-style) !important;
+		font-weight: var(--shiki-dark-font-weight) !important;
+		text-decoration: var(--shiki-dark-text-decoration) !important;
+	}
+}
+
+/* ---- Media & tables ---------------------------------------------------- */
+
+img,
+video {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+figure figcaption {
+	font-size: 0.9rem;
+	color: var(--text-muted);
+	font-style: italic;
+	margin-top: 0.4rem;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	font-size: 0.95rem;
+}
+
+th,
+td {
+	text-align: left;
+	padding: 0.4rem 0.6rem;
+	border-bottom: 1px solid var(--rule);
+}
+
+/* ---- Layout bits ------------------------------------------------------- */
+
+main {
+	min-height: 60vh;
+}
+
+/* Post lists: date + title on one row, no cards, no images. */
+.post-list {
+	list-style: none;
+	padding: 0;
+	margin: 1.5rem 0 0;
+}
+
+.post-list li {
+	display: flex;
+	gap: 1rem;
+	align-items: baseline;
+	margin-bottom: 0.6rem;
+}
+
+.post-list time {
+	color: var(--text-muted);
+	font-size: 0.95rem;
+	flex: 0 0 6.5rem;
+	font-variant-numeric: oldstyle-num;
+}
+
+.post-list a {
+	color: var(--link);
+}
+
+@media (max-width: 34rem) {
+	body {
+		font-size: 1.15rem;
+		padding: 2rem 1rem 3rem;
+	}
+	h1 {
+		font-size: 1.8rem;
+	}
+	.post-list li {
+		flex-direction: column;
+		gap: 0.1rem;
+		margin-bottom: 1rem;
+	}
+	.post-list time {
+		flex: none;
+	}
+}
+
+.sr-only {
+	position: absolute !important;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	overflow: hidden;
+	clip-path: inset(50%);
+	white-space: nowrap;
+}

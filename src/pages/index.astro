@@ -1,0 +1,80 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import FormattedDate from '../components/FormattedDate.astro';
+import Header from '../components/Header.astro';
+import Quill from '../components/Quill.astro';
+import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+import { getPublishedPosts } from '../utils/posts';
+
+const posts = (await getPublishedPosts()).slice(0, 5);
+---
+
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<div class="masthead">
+				<Quill width={64} />
+				<h1>Welcome Aboard</h1>
+				<p class="tagline">{SITE_DESCRIPTION}</p>
+			</div>
+
+			<h2>Recent logs</h2>
+			{
+				posts.length === 0 ? (
+					<p><em>Nothing published yet — check back soon.</em></p>
+				) : (
+					<ul class="post-list">
+						{posts.map((post) => (
+							<li>
+								<FormattedDate date={post.data.pubDate} />
+								<a href={`/logs/${post.id}/`}>{post.data.title}</a>
+							</li>
+						))}
+					</ul>
+				)
+			}
+			<p><a href="/logs">All logs &rarr;</a></p>
+		</main>
+		<Footer />
+	</body>
+</html>
+
+<style>
+	.masthead {
+		text-align: center;
+		margin: 1rem 0 3rem;
+		padding-bottom: 2rem;
+		border-bottom: 1px solid var(--rule);
+        border-color: #1d1f1e;
+	}
+
+	.masthead h1 {
+		margin: 0.75rem 0 0.25rem;
+	}
+
+	.tagline {
+		margin: 0;
+		color: var(--text-muted);
+		font-style: italic;
+		font-size: 1.05rem;
+	}
+
+	/* The quill is ornament — let it recede a little so the title leads. */
+	.masthead :global(.quill) {
+		opacity: 0.85;
+	}
+
+	@media (max-width: 34rem) {
+		.masthead {
+			margin-bottom: 2rem;
+			padding-bottom: 1.5rem;
+		}
+	}
+</style>
