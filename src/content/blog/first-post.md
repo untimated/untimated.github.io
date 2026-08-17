@@ -13,11 +13,12 @@ In this AI era, we all knew that browsing internet is not a usual thing to do, l
 
 But here I'll left my trace on my journey so that everyone can attest that the works that I made are genuine.
 
+Nice To meet ya
+
 ![A dimly lit wooden study with a desk, chairs and a patterned rug](../../assets/a_something_room.png)
 
->for a very long time, I haven't been able to find the courage to write anything to the public,
->but I figured the time for 'it' has called. 
+<i>for a very long time, I haven't been able to find the courage to write anything to the public,
+but I figured the time has called </i>
 
-Nice To meet ya
 
 
