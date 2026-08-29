@@ -3,6 +3,7 @@
 import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
 import { defineConfig, fontProviders } from 'astro/config';
+import { rehypeImageCaption } from './src/plugins/rehype-image-caption.ts';
 
 // https://astro.build/config
 export default defineConfig({
@@ -10,6 +11,7 @@ export default defineConfig({
 	site: 'https://untimated.github.io',
 	integrations: [mdx(), sitemap()],
 	markdown: {
+		rehypePlugins: [rehypeImageCaption],
 		shikiConfig: {
 			themes: { light: 'github-light', dark: 'github-dark' },
 		},
