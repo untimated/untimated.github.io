@@ -19,12 +19,12 @@ const years = [...byYear.entries()].sort((a, b) => b[0] - a[0]);
 <!doctype html>
 <html lang="en">
 	<head>
-		<BaseHead title="Logs" description="Everything I've written, newest first." />
+		<BaseHead title="Blog" description="Everything I've written, newest first." />
 	</head>
 	<body>
 		<Header />
 		<main>
-			<h1>Logs</h1>
+			<h1>Blog</h1>
 			{posts.length === 0 && <p><em>No entries yet.</em></p>}
 			{
 				years.map(([year, yearPosts]) => (
@@ -34,7 +34,7 @@ const years = [...byYear.entries()].sort((a, b) => b[0] - a[0]);
 							{yearPosts.map((post) => (
 								<li>
 									<FormattedDate date={post.data.pubDate} />
-									<a href={`/logs/${post.id}/`}>
+									<a href={`/blog/${post.id}/`}>
 										{post.data.title}
 										{post.data.draft && <span class="draft">draft</span>}
 									</a>

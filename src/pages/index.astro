@@ -25,7 +25,7 @@ const posts = (await getPublishedPosts()).slice(0, 5);
 				<p class="tagline">{SITE_DESCRIPTION}</p>
 			</div>
 
-			<h2>Recent logs</h2>
+			<h2>Recent posts</h2>
 			{
 				posts.length === 0 ? (
 					<p><em>Nothing published yet — check back soon.</em></p>
@@ -34,13 +34,13 @@ const posts = (await getPublishedPosts()).slice(0, 5);
 						{posts.map((post) => (
 							<li>
 								<FormattedDate date={post.data.pubDate} />
-								<a href={`/logs/${post.id}/`}>{post.data.title}</a>
+								<a href={`/blog/${post.id}/`}>{post.data.title}</a>
 							</li>
 						))}
 					</ul>
 				)
 			}
-			<p><a href="/logs">All logs &rarr;</a></p>
+			<p><a href="/blog">All posts &rarr;</a></p>
 		</main>
 		<Footer />
 	</body>

@@ -13,8 +13,8 @@ This week I figured I have to make the import cycle to authoring closed for good
 ![Asset importer](../../assets/importer.png)
 
 ## Goal
-Just focus on what it takes to show something in the world.
-What I need to focus on is my own workflow rather than making pretty UI that only I myself uses. 
+Focus on what it takes to show something in the scene world. 
+Making the cycle work, from import -> scene
 
 ### Palette / Asset Browser ?
 Palette window is practically impossible here, because *Spatials*, *SceneObjects*, etc
