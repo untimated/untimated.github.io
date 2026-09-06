@@ -15,6 +15,8 @@ const blog = defineCollection({
 		updatedDate: z.coerce.date().optional(),
 		// Drafts are visible with `npm run dev` but excluded from the built site.
 		draft: z.boolean().default(false),
+		// Set `comments: false` to hide the giscus thread on a post.
+		comments: z.boolean().default(true),
 	}),
 });
 

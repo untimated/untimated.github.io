@@ -1,0 +1,50 @@
+---
+/*
+  Comments via giscus (GitHub Discussions). The only client-side JS on the
+  site — it renders into an iframe, so it can't touch the page's own styles.
+  Threads are matched to posts by pathname, and created lazily on first
+  comment in the "Announcements" category of the site repo.
+ */
+---
+
+<section class="comments">
+	<hr />
+	<h2>Comments</h2>
+	<script
+		src="https://giscus.app/client.js"
+		data-repo="untimated/untimated.github.io"
+		data-repo-id="R_kgDOT7C_hg"
+		data-category="Announcements"
+		data-category-id="DIC_kwDOT7C_hs4DFAY3"
+		data-mapping="pathname"
+		data-strict="0"
+		data-reactions-enabled="1"
+		data-emit-metadata="0"
+		data-input-position="bottom"
+		data-theme="preferred_color_scheme"
+		data-lang="en"
+		crossorigin="anonymous"
+		async
+		is:inline></script>
+	<noscript>
+		<p>Comments need JavaScript. They live in <a href="https://github.com/untimated/untimated.github.io/discussions">GitHub Discussions</a>.</p>
+	</noscript>
+</section>
+
+<style>
+	.comments {
+		margin-top: 3rem;
+	}
+
+	.comments h2 {
+		font-size: 1.3rem;
+		margin-top: 0;
+		margin-bottom: 1.2rem;
+		color: var(--text-muted);
+		font-weight: 600;
+	}
+
+	.comments :global(.giscus) {
+		font-size: 1rem;
+	}
+</style>
