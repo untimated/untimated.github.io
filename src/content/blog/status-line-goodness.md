@@ -5,10 +5,9 @@ pubDate: '2026-10-05'
 draft: false
 ---
 
-This week is, I've decided to redesign the old status bar that is still lacking function.
-It is truly useful feature to place non-distractive information such as fps, file names, or unity like logger.
+This week I've decided to redesign the old status bar/line that's still lacking in function. It's a truly useful section for placing non-distractive information such as fps, file names, or unity like logger.
 
-The region is divided into three section
+The region is divided into three sections:
 ```
     struct StatusLine {
         ...
@@ -21,14 +20,16 @@ The region is divided into three section
 ![default state](../../assets/okt/status-line-normal.png)
 
 ### Log Region
-It's small and relatively easy to skim, it doesn't distract you but still able to if it wants. For example, on error or standard info, it will flash us with contrasting visuals.
+It's compact and relatively easy to skim, won't distract you, but still be able to if it wants. 
+For example, on error or standard info, this region will flash us with attention grabbing visual.
+
 ![status info](../../assets/okt/status-line-info.png)
 ![status error](../../assets/okt/status-line-error.png)
 
 ### Command Region
-One of the perk of having customized tools-
-is that nothing can get in the way of you building 'vim-like' command interface or perhaps our beloved VS/Sublime *command palettes* `ctrl-alt-p` 
-(except the spending your night agonizing on how to built it 🥲)
+One of the upsides of having customized tools, -
+is that nothing get in the way of me building _vim-like_ command interface or the famous __VSCode__/__Sublime__ *command palettes* `ctrl-alt-p` 
+(except for spending the night agonizing on how to build it)
 ![status error](../../assets/okt/status-line-cmd.png)
 
-**My Next goal is to make some debug panels for shadow textures or gamepad inputs.**
+**Next goalpost are debug panels for shadow textures and gamepad inputs.**
