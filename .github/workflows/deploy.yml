@@ -35,6 +35,8 @@ jobs:
         run: npm ci
 
       - name: Build site
+        env:
+          MONTWIG_GITHUB_TOKEN: ${{ secrets.MONTWIG_GITHUB_TOKEN }}
         run: npm run build
 
       - name: Upload artifact

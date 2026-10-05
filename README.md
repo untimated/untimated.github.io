@@ -80,6 +80,23 @@ template's Markdown style guide. Astro only builds posts inside
   self-hosts it at build time, so no requests go to Google at runtime
 - **Nav links** — `src/components/Header.astro`
 
+## Latest Montwig commit
+
+The welcome page shows `Montwig — latest commit message`, fetched when the blog
+builds. Only the first line of the commit message and its link are published.
+
+Because Montwig is private, create a fine-grained GitHub personal access token
+restricted to `untimated/montwig` with **Contents: read-only**. In the blog
+repository, add it under **Settings → Secrets and variables → Actions** as a
+repository secret named `MONTWIG_GITHUB_TOKEN`. The deployment workflow passes
+this secret only to the build step.
+
+For local development, set `MONTWIG_GITHUB_TOKEN` in `.env` (already ignored by
+Git). If the token is missing or GitHub cannot be reached, the line shows only
+the Montwig project link. Run the deployment workflow again to refresh the
+commit after working on Montwig. Commit links remain private to people with
+repository access.
+
 ## Custom domain
 
 Add a `public/CNAME` file containing just the domain (e.g. `example.com`), point
