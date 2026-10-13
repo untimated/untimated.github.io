@@ -1,0 +1,25 @@
+# Pages CMS config (https://pagescms.org/docs/configuration/)
+media:
+  input: src/assets
+  output: ../../assets
+  extensions: [png, jpg, jpeg, gif, webp, svg]
+
+content:
+  - name: blog
+    label: Blog
+    type: collection
+    path: src/content/blog
+    filename: "{primary}.md"
+    view:
+      fields: [title, pubDate, draft]
+      default:
+        sort: pubDate
+        order: desc
+    fields:
+      - { name: title, label: Title, type: string, required: true }
+      - { name: description, label: Description, type: string, required: true }
+      - { name: pubDate, label: Published, type: date, required: true }
+      - { name: updatedDate, label: Updated, type: date }
+      - { name: draft, label: Draft, type: boolean, default: false }
+      - { name: comments, label: Comments, type: boolean, default: true }
+      - { name: body, label: Body, type: rich-text }
