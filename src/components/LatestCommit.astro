@@ -49,13 +49,16 @@ if (token) {
 		gap: 0.4rem;
 	}
 
-	.latest-commit svg,
-	.latest-commit time {
+	.latest-commit svg {
 		flex-shrink: 0;
 	}
 
-	.latest-commit time {
+	/* <time> comes from FormattedDate, so it needs :global to escape scoping. */
+	.latest-commit :global(time) {
+		flex-shrink: 0;
+		font-size: 0.8em;
 		color: var(--text-muted);
+		white-space: nowrap;
 	}
 
 	.latest-commit a {
