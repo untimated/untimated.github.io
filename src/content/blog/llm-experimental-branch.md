@@ -29,9 +29,17 @@ Then few months after, I came to know Claude Code and Codex. A much radical way 
 
 ### The Engine has Become A Burden
 
-Montwig is a 2.5+ yrs project by now, developed with crumbs of sparetime from day job. It started to demand results after a year passed and It's still not ready; a game with new engine from scratch is truly not easy, my body and brain can't keep up! then the excitement when everything was just lean win32 and single fat d3d layer is no longer there. I thought, this has to be a sign of burnout. However, my ego says that's a weakness, pushing constantly regardless of your wellbeing is the only way things get done. So I pushed on, but reality after experimentation shows otherwise - system getting complex, I'm getting older and I haven't touched paper and gouache for months it's getting dry. The engine become the burden than an asset.
+Montwig is a 2.5+ yrs project by now, developed with crumbs of sparetime from my day job. It started to demand results after a year passed and It's still not ready; a game with new engine from scratch is truly not easy, my body and brain can't keep up! then the excitement when everything was just lean win32 and single fat d3d layer is no longer there. I thought, this has to be a sign of burnout. However, my ego says that's a weakness, pushing constantly regardless of your wellbeing is the only way things get done. So I pushed on, but reality after experimentation shows otherwise - the system is getting complex, coding is harder not easier, I'm getting older and I haven't touched paper and gouache for months it's getting dry. The engine had become the burden than a pride.
 
+The journey is not for naught, dipping your feet on complex and tough challenge like this gives you not just skills but illumination of wisdom in programming as a craft. It felt like that the secrets are revealed one by one to you, and when everyone around us still lived within that thick fog, we've stand on top of it. Nevertheless It came with a price that you may not prepared to or ability to pay.
 
+### Rescue
 
-### Approach
+In my observation in AI people are now splitted to three kind of groups, the Pro-AI, Anti-AI and the Skeptics.
+
+The Pro AI are easier to identify as they are always on the social media following, criticizing and benchmarking LLM from top labs. Their usual catchphrase was "Cope" or "Replaced". Many of them, not all, became *vibe coders*.
+
+The Anti AI is harder to spot because some of them are just skeptical of AI rather than complete rejection of the technology. At the far spectrum, the Anti AI usually brings up ethical topic like IP concern or AI Ban itself. 
+
+Skeptics group which includes people like me, acknowledges the use of AI and how transformative it is but held back to celebrate until the idea of "proper use" of AI reached consensus. They use and not use AI at the same time. For example corporation that I work on uses Claude enterprise only expecting 30% of development speed ups. Very conservative if were viewed from X tech/AI bro standpoint.
 
