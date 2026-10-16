@@ -23,9 +23,11 @@ That changes mid 2026, where I tried Claude after no chatgpt or gemini model can
 // auto duration = std::chrono::duration<double, std::milli>(sleeptime - 1.0);  // tanks fps
 ```
 
-Back to LLM involvement here, and yes the LLM solves it; at that time it was claude but perhaps nowadays any model is powerful enough to solve this type of bugs. After that, for the next 4 months, slowly I was introduced to many agents harness like CC, Codex, Deepseek etc. 
+Back to LLM involvement here, and yes the LLM solves it with very minimal chat based debugging (I just copy-pasted bunch of contexts); at that time it was claude but perhaps nowadays any model is powerful enough to solve this type of bugs. At that point I started to see how deep LLM capability had become. Deep understanding on system level code is really not easy back then during gpt-4o era, it can't do these kind of problem properly without hallucinating.
+
+The next 4 months after that, I was introduced to agents harness like CC / Codex. A completely new way of of coding for me. It sits on your computer and read your codebase aggresively. From these context, it offers you to write the solution by itself directly. 
 
 
 
+## Approach
 
-## Approach 
