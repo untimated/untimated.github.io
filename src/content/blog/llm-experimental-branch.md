@@ -33,13 +33,13 @@ Montwig is a 2.5+ yrs project by now, developed with crumbs of sparetime from my
 
 The journey is not for naught, dipping your feet on complex and tough challenge like this gives you not just skills but illumination of wisdom in programming as a craft. It felt like that the secrets are revealed one by one to you, and when everyone around us still lived within that thick fog, we've stand on top of it. Nevertheless It came with a price that you may not prepared to or ability to pay.
 
-### Rescue
+### The Split
 
-In my observation in AI people are now splitted to three kind of groups, the Pro-AI, Anti-AI and the Skeptics.
+In my observation in AI people are now clustered into three kind of groups, the Pro-AI, Anti-AI and the Skeptics.
 
-The Pro AI are easier to identify as they are always on the social media following, criticizing and benchmarking LLM from top labs. Their usual catchphrase was "Cope" or "Replaced". Many of them, not all, became *vibe coders*.
+The Pro AI are easier to identify as they are always on the social media following, criticizing and benchmarking LLM from top labs. Their usual catchphrase was "Cope" or "Replaced". Many of them, not all, became *vibe coders*. These people drive and promotes AI technology for all.
 
-The Anti AI is harder to spot because some of them are just skeptical of AI rather than complete rejection of the technology. At the far spectrum, the Anti AI usually brings up ethical topic like IP concern or AI Ban itself. 
+The Anti AI is harder to spot because some of them are just skeptical of AI rather than complete rejection of the technology. Anti AI usually brings up ethical topic like IP concern or AI Ban itself. Some political figure in the US ocassionally seen to raise many concerns regarding AI with some radical rejection towards the technology.
 
-Skeptics group which includes people like me, acknowledges the use of AI and how transformative it is but held back to celebrate until the idea of "proper use" of AI reached consensus. They use and not use AI at the same time. For example corporation that I work on uses Claude enterprise only expecting 30% of development speed ups. Very conservative if were viewed from X tech/AI bro standpoint.
+Skeptics group which includes people like me, acknowledges the use of AI and how transformative it is but held back to celebrate until the idea of "proper use" of AI reached consensus or It has proven itself to live up to its hype. They use and not use AI at the same time. For example corporation that I work on uses Claude enterprise only expecting 30% of development speed ups. Very conservative if were viewed from X tech/AI bro standpoint.
 
