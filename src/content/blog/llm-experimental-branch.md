@@ -4,7 +4,7 @@ description: Time shifted, we ought to be cautious with the unknown but be open
   to positive change
 pubDate: 2026-10-16
 updatedDate: 2026-10-16
-draft: true
+draft: false
 comments: false
 ---
 LLMs of late 2026 are no longer the same tool as a year ago. Until now I simply relied on AI chat to explain concepts and architectural decisions. It wasn't a pleasant experience back then. They hallucinated, making up confident remarks. Yet I admit it was still a tremendous productivity multiplier compared to manual information gathering from books, docs or videos.
