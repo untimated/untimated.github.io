@@ -12,6 +12,17 @@ It wasn't a pleasant experience back then, they hallucinates, making up confiden
 
 In this post I would like to go through reasons of why that's no longer the case, and how I'll use this month to deeply integrate coding agents into my most intimate side project. Something that I consider, a strict *no AI generated code zone*.
 
+### The AI Faction Split 
+
+I observed something interesting recently that AI are now clustering people into three kind of groups, the Pro-AI, Anti-AI and the Skeptics (Some of are influx of new folks outside tech)
+
+The **Pro AI** on the social media keeping tab of progress, promoting and benchmarking LLMs. At the radical spectrum, when arguing with the Anti-AIs their usual catchphrase are: **"Cope"** or **"Replaced"**.
+
+The **Anti AI** is trickier to spot because some of them are not completely convinced that AI is garbage. They demand answer around ethical topics like IP concern, economics and environmental impact. At the radical spectrum, their catchphrase revolved around : **"Slop"** or **"Bubble"**. 
+
+*Skeptics* which includes people like Linus Trovalds and Terence Tao acknowledged the use of AI and how transformative it is; but held back of excess celebration until the idea of "proper use" of AI reached consensus or until it has proven itself to live up to its hype. Usually these people are the niches, or the 99th percentile of talents that truly working on cutting edge problems where problems are not solve in a day or two, but decades. A lateral problem solving that requires complex interchange of domains.
+[Case Of Physicist working with AI which otherwise could take months](https://x.com/Fabien_Mikol/status/2111066043288261091?s=20)
+
 ### My History with LLM
 
 Somewhere mid 2025 when my skepticism is all time high of coding agents, I coded manually for both day job and side projects. Just classic workflow of visiting **ChatGPT**, **Gemini** on the web then copy pasting codes, asking know-how of particular API or concepts. A tedious process but I considered that as the peak of what I thought how AI will influence software engineering discipline.
@@ -43,16 +54,25 @@ First, I noticed LLM has grown smarter in a way that using it as code reviewer a
 
 Second, A pilot experiment with my day job by almost having agent write 70% of the golang code for our corporate backend. I still do it in some scaffold code like directing what API to be built, how should they behave, and how the code should look like only to find my trust deepens with that kind of workflow. Not only they wrote complex logic that will otherwise got in my blind spots, they also respected my code structure and aesthetics very well. Almost looked like code that I will write if I have extra 50 IQ points.
 
-### The AI Faction Split 
+### What's Next
 
-Software field are now clustered into three kind of groups, the Pro-AI, Anti-AI and the Skeptics (Some of are influx of new folks outside tech)
+For this month, I'm going to make an experimental branch `master-llm` from `master` where I can freely explores the profit as well the loss of using Agentic approach with AI, with me increasingly will relieve the tight grip overtime I have proof that this is the right balance to use this awesome technology. 
 
-The **Pro AI** on the social media keeping tab of progress, promoting and benchmarking LLMs. At the radical spectrum, when arguing with the Anti-AIs their usual catchphrase are: **"Cope"** or **"Replaced"**.
+The Goal is to free up my time and energy from implementing engine editor as I prepare for the pre-production plan. There are plenty work in prototyping side : gameplay, aesthetics, concept art, world building and screen writing. Then we will move on to end-to-end engine test with semi-serious art. In short : I need to go back to my art board quickly.
 
-The **Anti AI** is trickier to spot because some of them are not completely convinced that AI is garbage. They demand answer around ethical topics like IP concern, economics and environmental impact. At the radical spectrum, their catchphrase revolved around : **"Slop"** or **"Bubble"**. 
+### Artist Pride and Purity
 
-*Skeptics* which includes people like Linus Trovalds and Terence Tao acknowledged the use of AI and how transformative it is; but held back of excess celebration until the idea of "proper use" of AI reached consensus or until it has proven itself to live up to its hype. Usually these people are the niches, or the 99th percentile of talents that truly working on cutting edge problems where problems are not solve in a day or two, but decades. A lateral problem solving that requires complex interchange of domains.
-[Case Of Physicist working with AI which otherwise could take months](https://x.com/Fabien_Mikol/status/2111066043288261091?s=20)
+If the pride is to pick the hardest and purest technique as possible, then I should throw it away. Because it's the wrong pride to keep in the first place.
+
+Is using LLM makes you bad artist ? I'm sure even if that grants you extra credibility and fame, it won't give you a free ticket to fun. A good game still needs to be designed, thought and felt over until the experiences glued together. 
+
+Players want Game Developers to own the best tools available to deliver the best results for them. They know art is back breaking life path but it's not in their interest either to see the suffering of the artist. The transaction is where it matters.
+
+So this whole experiment exist to prove what LLM gives and what it takes. To what extend before it stops giving benefits. **The right use of AI**.
+
+
+
+
 
 
 
