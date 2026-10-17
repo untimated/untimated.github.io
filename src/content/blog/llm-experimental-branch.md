@@ -58,24 +58,27 @@ Second, A pilot experiment with my day job by almost having agent write 70% of t
 
 ### What's Next
 
-For this month, I'm going to make an experimental branch `master-llm` from `master` where I can freely explores the profit as well the loss of using Agentic approach with AI, with me increasingly will relieve the tight grip overtime I have proof that this is the right balance to use this awesome technology. 
+For this month going forward, I'm going to make an experimental branch `master-llm` from `master` where I can freely explores the profit as well the loss of using Agentic approach with AI.  First with a tight grip which I'll release overtime until I have reliable proofs for my self that workflow works and balanced. It's like pitching to my own skeptical self.
 
-The Goal is to free up my time and energy from implementing engine editor as I prepare for the pre-production plan. There are plenty work in prototyping side : gameplay, aesthetics, concept art, world building and screen writing. Then we will move on to end-to-end engine test with semi-serious art. In short : I need to go back to my art board quickly.
+The side goal is to free up my time and energy from implementing engine editor as I prepare for the pre-production plan. There are plenty work in prototyping side : gameplay proto, aesthetic proto, concept arts, world building and screen writing. 
+
+Technically I'll be using Claude Code mainly on manual mode, review each chunks it proposes, making sure the structure adheres to my standard and taste. I'm aware that reading does not equate to writing your own. So I might read, understand and approved the code but by not coding yourself - **I'm preprared to pay the price of skill atrophy.**
 
 ### Artist Pride and Purity
 
 If the pride is to pick the hardest and purest technique as possible, then I should throw it away. Because it's the wrong pride to keep in the first place.
 
-Is using LLM makes you bad artist ? I'm sure even if that grants you extra credibility and fame, it won't give you a free ticket to fun. A good game still needs to be designed, thought and felt over until the experiences glued together. 
+Is using LLM makes you bad artist ? I'm sure even if that grants you extra credibility and fame, it won't give you a free ticket to success. A good game will still need to be designed, thought and felt over until the experiences glued together. The struggle just shifted. For a Solo Developer the benefits outweigh the cost.
 
-Players want Game Developers to own the best tools available to deliver the best results for them. They know art is back breaking life path but it's not in their interest either to see the suffering of the artist. The transaction is where it matters.
+Players want Game Developers to own the best tools available to deliver the best results for them.  Everyone aware that art is a path of tribulation, Yet it's not in their interest either to see the suffering of the artists. The transaction is where it matters.
 
-So this whole experiment exist to prove what LLM gives and what it takes. To what extend before it stops giving benefits. **The right use of AI**.
+So this whole experiment exist to prove what LLM gives and what it takes. To what extend before it stops giving benefits. In essence to find **The right use of AI**.
 
+> The artist who has the habitus of  
+> art and a trembling hand,   
+> produces an imperfect work,   
+> but retains a faultless virtue.   
+>      *C'ha l'habito de l'arte e man che trema,*
+>
+> - Jacques Maritain - Art and Scholasticism
 
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
