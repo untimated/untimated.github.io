@@ -3,6 +3,7 @@ title: My Shifting Paradigm on Programming
 description: Time shifted, we ought to be cautious with the unknown but be open
   to positive change
 pubDate: 2026-10-16
+updatedDate: 2026-10-17
 draft: false
 comments: false
 ---
@@ -10,7 +11,7 @@ LLMs of late 2026 are no longer the same tool as a year ago. Until now I simply 
 
 In this post I would like to go through the reasons why that's no longer the case, and how I'll use this month to deeply integrate coding agents into my most intimate side project. Something I consider a strict *no AI generated code zone*.
 
-### Faction Split
+## Faction Split
 
 I observed something interesting recently: AI is now clustering people into three kinds of groups, the Pro-AI, the Anti-AI and the Skeptics (some of them an influx of new folks from outside tech).
 
@@ -21,7 +22,7 @@ The **Anti-AI** are trickier to spot because some of them are not completely con
 The *Skeptics* include people like Linus Torvalds and Terence Tao. They acknowledge the use of AI and how transformative it is, but hold back from excessive celebration until the idea of "proper use" reaches consensus, or until AI proves it lives up to the hype. Usually these people work in niches, or are the 99th percentile of talent working on cutting-edge problems that are not solved in a day or two, but in decades. Lateral problem solving that requires a complex interchange of domains.  
 [Case of a physicist working with AI on something that could otherwise take months](https://x.com/Fabien_Mikol/status/2111066043288261091?s=20)
 
-### My History with LLMs
+## My History with LLMs
 
 Around mid 2025, when my skepticism of coding agents was at an all-time high, I coded manually for both my day job and side projects. Just the classic workflow of visiting **ChatGPT** and **Gemini** on the web and copy-pasting code back and forth. The process was tedious, but I considered it the peak of how AI would influence the software engineering discipline.
 
@@ -36,7 +37,7 @@ The LLM solved it with minimal context from chat-based debugging. I believe nowa
 
 Then a few months later, I came to know **Claude Code** and **Codex**, a much more radical way of AI-assisted coding. It sits on your computer and reads your codebase holistically. From that context, it helps you by writing the solution directly into the files in a tight loop. It's all a bunch of API calls to the *Anthropic* API, but it feels integrated and somehow cheaper with their caching.
 
-### A Burden To Pay
+## A Burden To Pay
 
 Montwig is a 2.5+ year project by now, developed with crumbs of spare time from my day job. It started to demand results after a year passed, and yet it's still not ready. A game with a new engine from scratch is truly not a feat for one person. My body and brain can't keep up! Nobody should tell you it's a great idea.
 
@@ -46,7 +47,7 @@ That said, the journey isn't all lost either. Dipping your hand into a complex a
 
 Nevertheless, it came with a price that you may not be prepared or able to pay. Your circumstances matter. I would advise you to go with a commercial engine and start making the game of your dreams, but don't shy away from the desire to understand something deeper when you have the time and energy. Tradeoffs are real, so make sure you reason them out against your situation and expectations.
 
-### Switching Paradigm
+## Switching Paradigm
 
 Last week I made a radical compromise: using AI not just as a chat tool but as agents that write code directly in the source code. Why?
 
@@ -54,7 +55,7 @@ First, I noticed LLMs have grown so smart that using them as a code reviewer and
 
 Second, I ran a pilot experiment at my day job, having agents write almost 70% of the Golang code for our corporate backend. I still did some scaffolding, like directing which APIs to build, how they should behave, and how the code should look, and my trust only deepened with that kind of workflow. Not only did they write complex logic that would otherwise have been in my blind spots, they also respected my code structure and aesthetics very well. It almost looked like code I would write if I had an extra 50 IQ points.
 
-### What's Next
+## What's Next
 
 For this month going forward, I'm going to make an experimental branch `master-llm` from `master`, where I can freely explore the profit and the loss of using an agentic approach on a game engine codebase. First with a tight grip, which I'll release over time until I have reliable proof for myself that the workflow works and is balanced. It's like pitching to my own skeptical self.
 
@@ -64,7 +65,7 @@ Technically, I'll be using **Claude Code CLI** in manual mode, reviewing each ch
 
 I'll post more updates on how it goes in the coming weeks. For a while now I've seen a glimpse of tremendous commit output and features made in these past few days with this workflow.
 
-### Artist Pride and Purity
+## Artist Pride and Purity
 
 If the pride is to pick the hardest and purest technique possible, then I should throw it away, because it's the wrong pride to keep in the first place.
 
