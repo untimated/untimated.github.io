@@ -2,8 +2,7 @@
 title: My Shifting Paradigm on Programming
 description: Time shifted, we ought to be cautious with the unknown but be open
   to positive change
-pubDate: 2026-10-16
-updatedDate: 2026-10-17
+pubDate: 2026-10-17
 draft: false
 comments: false
 ---
