@@ -3,7 +3,6 @@ title: My Shifting Paradigm on Programming
 description: Time shifted, we ought to be cautious with the unknown but be open
   to positive change
 pubDate: 2026-10-16
-updatedDate: 2026-10-16
 draft: false
 comments: false
 ---
@@ -82,3 +81,4 @@ So this whole experiment exists to prove what LLMs give and what they take, and 
 >      *C'ha l'habito de l'arte e man che trema,*
 >
 > - Jacques Maritain - Art and Scholasticism
+
