@@ -52,7 +52,7 @@ The **Pro AI** on the social media keeping tab of progress, promoting and benchm
 The **Anti AI** is trickier to spot because some of them are not completely convinced that AI is garbage. They demand answer around ethical topics like IP concern, economics and environmental impact. At the radical spectrum, their catchphrase revolved around : **"Slop"** or **"Bubble"**. 
 
 *Skeptics* which includes people like Linus Trovalds and Terence Tao acknowledged the use of AI and how transformative it is; but held back of excess celebration until the idea of "proper use" of AI reached consensus or until it has proven itself to live up to its hype. Usually these people are the niches, or the 99th percentile of talents that truly working on cutting edge problems where problems are not solve in a day or two, but decades. A lateral problem solving that requires complex interchange of domains.
-![Case Of Physicist working with AI which otherwise could take months](https://x.com/Fabien_Mikol/status/2111066043288261091?s=20)
+[Case Of Physicist working with AI which otherwise could take months](https://x.com/Fabien_Mikol/status/2111066043288261091?s=20)
 
 
 
