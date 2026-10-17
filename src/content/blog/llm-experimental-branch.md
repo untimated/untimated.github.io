@@ -1,7 +1,7 @@
 ---
-title: LLM Experimental Branch
-description: Finding out a good use of LLM that balances productivity with
-  quality and control
+title: My Shifting Paradigm on Programming
+description: Time shifted, we ought to be cautious with the unknown but be open
+  to positive change
 pubDate: 2026-10-16
 updatedDate: 2026-10-16
 draft: true
