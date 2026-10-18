@@ -4,9 +4,9 @@ on:
   # Publish on every push to the default branch.
   push:
     branches: [main]
-  # ...every 3 hours, so the Montwig commits under "Working on" stay fresh...
+  # ...once a day, so the Montwig commits under "Working on" stay fresh...
   schedule:
-    - cron: '0 */3 * * *'
+    - cron: '0 0 * * *'
   # ...and allow a manual run from the Actions tab.
   workflow_dispatch:
 
