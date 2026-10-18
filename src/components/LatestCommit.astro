@@ -22,7 +22,8 @@ if (token) {
 
 		const [latest] = await response.json();
 		if (latest?.commit?.message && latest.html_url) {
-			message = latest.commit.message.split('\n')[0].trim();
+			// Squash the whole message onto one line; CSS truncates it with an ellipsis.
+			message = latest.commit.message.replace(/\s+/g, ' ').trim();
 			commitUrl = latest.html_url;
 			date = new Date(latest.commit.committer.date);
 		}
