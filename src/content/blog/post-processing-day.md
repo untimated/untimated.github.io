@@ -6,7 +6,7 @@ updatedDate: 2026-11-06
 draft: true
 comments: true
 ---
-This time I had to code this manually, a crucial feature for the game aesthetics. A glow/bloom is necessary for night or indoor scenes. This method is inspired from this source, modified to fit with the engine.  
+This time I had to code this manually, a crucial feature for the game aesthetics like glow & bloom for night or indoor scenes. This method is inspired from opengl tutorial modified to fit with the engine structure, and I don't use MRT (Multiple Render Target) here. Simple linear pipeline from top to bottom.
 
 [https://learnopengl.com/Advanced-Lighting/Bloom](https://learnopengl.com/Advanced-Lighting/Bloom)
 
@@ -39,12 +39,12 @@ FILTERED  -> Result from BUFFER1/2 or RESOLVED may ended up here. It's the final
 
 ![image.png](../../assets/image-6.png)
 
-
-## Camera
+### Camera
 
 I need to attach this post process behavior to somewhere representative like scenes or cameras. The latter is a better and more flexible approach, multiple views rendered together with different filter is useful.
 
 So I just add one new settings state to the camera struct
+
 ```
     struct PostProcessSettings {
         bool active = false;
@@ -68,8 +68,19 @@ So I just add one new settings state to the camera struct
 
 ```
 
-
 ## Post Process - Collection step
 
 ## Postprocess - Render and Addition
+
+
+
+### Result
+
+![Draw Pass](../../assets/image-11.png)
+
+![Step - Collection](../../assets/image-8.png)
+
+![Step - Application](../../assets/image-9.png)
+
+![Step - Compose](../../assets/image-10.png)
 
