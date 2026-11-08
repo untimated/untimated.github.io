@@ -119,7 +119,7 @@ float4 blur(float4 base, float2 uv) {
 
 Not state of the art but I won't go further than this for solo dev. It's plenty good, even on par with air brush effect in painting/photo software. 
 
-You can read the theoretical part from [wikipedia](https://en.wikipedia.org/wiki/Normal_distribution) or in RealTime Rendering book p.515
+You can read the theoretical part from [wikipedia](https://en.wikipedia.org/wiki/Normal_distribution) or in [Real-Time Rendering](https://www.amazon.com/exec/obidos/ASIN/1568814240/acmorg-20?th=1), p.515.
 
 Cut to the core of the meat, in order to produce proper Gaussian Blur, we need to have two things : weights and passes. As shown in this figure each pixels will have their assigned numbers we called weight, and those will serves as multiplier for the pixel values. The further from the center the weaker the value.
 
@@ -145,6 +145,7 @@ We'll strip the constants on the left side of the form, and just keep the exp(..
         return weights;
     }
 ```
+
 Ideally radius value is derived from the sigma, so `sigma = radius / 3.0` or `radius = sigma / 3.0f`. Sigma often directly related to the smoothness and size of the blur, but with more ping-pong passes you can smear it a little bit without adding more sampling.
 
 Draw this in ping-pong manner by sending horizontal flags to let shader know whether it should run sampling on X or Y axis. You can use any number of passes as long as its greater than 2. 
