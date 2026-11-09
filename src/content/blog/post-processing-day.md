@@ -2,11 +2,10 @@
 title: Post Processing Day
 description: Refactoring renderer for post process
 pubDate: 2026-11-03
-updatedDate: 2026-11-06
 draft: true
 comments: true
 ---
-Glow and bloom are a big part of the look of night and indoor scenes in my game, so I had to code them by hand. The method is based on the LearnOpenGL bloom tutorial, adapted to my engine's structure. I don't use MRT (Multiple Render Targets). A simple linear pipeline, top to bottom, is enough.
+Glow and bloom are a big part of the look of night and indoor scenes this time decided that I had to code them by hand. The method is based on the LearnOpenGL bloom tutorial, adapted to my engine's structure. I don't use MRT (Multiple Render Targets). A simple linear pipeline, top to bottom, is enough.
 
 The code is tailored to my engine. Some conventions will need translating to your own setup.
 
@@ -237,5 +236,6 @@ This isn't meant as a tutorial. I just wanted to show my simple, layman's approa
 
 ## References
 
-- de Vries, Joey. "Bloom." *LearnOpenGL*. https://learnopengl.com/Advanced-Lighting/Bloom
+- de Vries, Joey. "Bloom." *LearnOpenGL*. [https://learnopengl.com/Advanced-Lighting/Bloom](https://learnopengl.com/Advanced-Lighting/Bloom)
 - Akenine-Möller, T., Haines, E., Hoffman, N. *Real-Time Rendering*, 3rd ed. A K Peters, 2008.
+
