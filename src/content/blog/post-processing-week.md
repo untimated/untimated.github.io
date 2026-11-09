@@ -1,8 +1,9 @@
 ---
-title: Post Processing Day
+title: Post Processing Week
 description: Refactoring renderer for post process
 pubDate: 2026-11-03
-draft: true
+updatedDate: 2026-11-09
+draft: false
 comments: true
 ---
 Glow and bloom are a big part of the look of night and indoor scenes this time decided that I had to code them by hand. The method is based on the LearnOpenGL bloom tutorial, adapted to my engine's structure. I don't use MRT (Multiple Render Targets). A simple linear pipeline, top to bottom, is enough.
