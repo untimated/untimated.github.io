@@ -1,8 +1,7 @@
 ---
 title: Post Processing Week
 description: Refactoring renderer for post process
-pubDate: 2026-11-03
-updatedDate: 2026-11-09
+pubDate: 2026-11-10
 draft: false
 comments: true
 ---
