@@ -2,7 +2,8 @@
 title: "Collision System : Pt 1"
 description: "Preparing the last big system for the engine : Collider"
 pubDate: 2026-11-23
-draft: true
+updatedDate: 2026-11-23
+draft: false
 comments: true
 ---
 This week I'm working on the collision system, probably the last critical module that my engine and game needed. Drawing and moving is solved, but how they interact with each other is what shifted the 3D software to a real game world builder. 
@@ -116,7 +117,7 @@ Drawing::RenderDrawable(this->box_drawable);
 
 ## What's Next
 
-The final part is about making these pretty shapes actually collides and affecting the real object transformation. Plenty of work on intersections math and *Collision Callbacks*. see you later.
+The final part is about making these pretty shapes actually collides and affecting the real object transformation. There will be bunch of Intersections math, phasing and *Collision Callbacks*. see you later.
 
 ## Reference
 
