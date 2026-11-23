@@ -1,8 +1,7 @@
 ---
 title: "Collision System : Pt 1"
 description: "Preparing the last big system for the engine : Collider"
-pubDate: 2026-11-22
-updatedDate: 2026-11-22
+pubDate: 2026-11-23
 draft: true
 comments: true
 ---
@@ -22,12 +21,12 @@ First you want to treat a collider as properties owned by objects. I've placed i
     struct Collider {
         bool active = false;
         // ...
-        ObjectFactory::SceneObject * owner = nullptr; // link to the object owner
+        ObjectFactory::SceneObject * owner = nullptr; // link to the collider owner
         ColliderShape shape = ColliderShape::BOX;
-        Geometry::AABB box = {};
-        Geometry::Capsule capsule = {};
-        Geometry::Sphere sphere = {};
-        ColliderMesh GetVisualMesh();  // for drawing data
+        Geometry::AABB box = {};                     // Simple min-max bound no OBB
+        Geometry::Capsule capsule = {};              // One point and radius
+        Geometry::Sphere sphere = {};                // Two points and radius
+        ColliderMesh GetVisualMesh();                // for drawing data
 
         // ...
     }
@@ -56,11 +55,11 @@ Then, just like physics engine, collision system also requries separate world to
 
 ## Drawing The Collider
 
-Although the names seems like it act like normal shapes, for colliders the appearance can be simplified. For example the cube is just borrowing AABB pattern, sphere is just three circles drawn in all axis, then capsule a bunch of circles, half circles and connectors drawn together.
+Rather than drawing full real mesh, collider's appearance can be simplified. For example the cube is just borrowing AABB pattern, sphere is just three circles drawn in all axis, and then capsule are just bunch of circles, half circles and connectors drawn together. This is what *Unity* and *Godot* ultimately do as well.
 
 ![box, sphere and capsule](../../assets/image-21.png)
 
-You just need this two to makes sense of the rest. 
+You just need these two to makes sense of the rest. 
 
 ```
 // Highschool trig `x = r cos(∝)` and `y = r sin(∝)` -> expand to 3D axis with Z
@@ -117,5 +116,9 @@ Drawing::RenderDrawable(this->box_drawable);
 
 ## What's Next
 
-The next final part is about making these pretty shapes actually collides and affecting the real object transformation. See you.
+The final part is about making these pretty shapes actually collides and affecting the real object transformation. Plenty of work on intersections math and *Collision Callbacks*. see you later.
+
+## Reference
+
+Jason Gregory, *Game Engine Architecture*, 3rd ed, p. 853.
 
