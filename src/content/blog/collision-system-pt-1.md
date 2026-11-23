@@ -2,7 +2,6 @@
 title: "Collision System : Pt 1"
 description: "Preparing the last big system for the engine : Collider"
 pubDate: 2026-11-23
-updatedDate: 2026-11-23
 draft: false
 comments: true
 ---
